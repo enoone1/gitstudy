@@ -31,6 +31,8 @@ pipeline{
                 }
 
                 stage('Branch B'){
+                
+                stages{
 
                     stage('B-1'){
 
@@ -44,6 +46,7 @@ pipeline{
                             steps{
                                 echo 'B-2 testing'
                             }
+                        }
                         }
                 }
             }
