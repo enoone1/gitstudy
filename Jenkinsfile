@@ -6,7 +6,7 @@ pipeline{
 
     stages{
 
-        stage('1'){
+        stage('测试阶段'){
 
             parallel{
 
@@ -14,17 +14,17 @@ pipeline{
 
                     stages{
 
-                        stage('1-1'){
+                        stage('A-1'){
 
                             steps{
-                                echo ''
+                                echo 'A-1 testing'
                             }
                         }
 
-                        stage('1-2'){
+                        stage('A-2'){
 
                             steps{
-                                echo ''
+                                echo 'A-2 testing'
                             }
                         }
                     }
@@ -32,9 +32,19 @@ pipeline{
 
                 stage('Branch B'){
 
-                    steps{
-                        echo "On Branch B"
-                    }
+                    stage('B-1'){
+
+                            steps{
+                                echo 'B-1 testing'
+                            }
+                        }
+
+                        stage('B-2'){
+
+                            steps{
+                                echo 'B-2 testing'
+                            }
+                        }
                 }
             }
         }
