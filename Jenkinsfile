@@ -2,7 +2,7 @@ import hudson.model.*;
 
 pipeline{
 
-    agent  none
+    agent {label 'lw'}
 
     stages{
 
