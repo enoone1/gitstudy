@@ -6,7 +6,7 @@ pipeline{
 
     stages{
 
-        stage('测试阶段'){
+        stage('Testing'){
 
             parallel{
 
