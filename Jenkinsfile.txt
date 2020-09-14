@@ -6,7 +6,7 @@ pipeline{
 
     stages{
 
-        stage('‘À––≤‚ ‘'){
+        stage('1'){
 
             parallel{
 
